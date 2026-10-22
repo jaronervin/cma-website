@@ -1,0 +1,83 @@
+{
+  "title": "Coolfont Mountainside Association",
+  "url": "https://coolfontmountainside.com",
+  "posts_per_page": 10,
+  "skip_pages": ["1423-2", "register", "register/edit-your-profile", "register/restricted-content",
+                 "register/update-billing-card", "register/your-membership"],
+  "carousel": [
+    "/uploads/2024/01/cropped-IMG_3691.jpg",
+    "/uploads/2018/03/cropped-en01-1-scaled.jpg",
+    "/uploads/2018/02/cropped-DSC_7399-Jamie-Sullivan.jpg",
+    "/uploads/2021/06/cropped-Scenery-2021-Trees-Fog-scaled-1.jpeg",
+    "/uploads/2025/06/Pool-3.jpg"
+  ],
+  "logo": "/uploads/2021/05/CMA-Logo_River-Only-1024x402.png",
+  "nav": [
+    {"title": "Home", "href": "/"},
+    {"title": "Community", "href": "/community/", "children": [
+      {"title": "About", "href": "/community/about-coolfont/"},
+      {"title": "Amenities", "href": "/community/amenities/"},
+      {"title": "Attractions", "href": "/community/area-attractions/"},
+      {"title": "Firewise USA", "href": "/community/firewise-usa/"},
+      {"title": "Photo Gallery", "href": "/community/photo-gallery/"},
+      {"title": "Visitor Information", "href": "/community/visitor-information/"},
+      {"title": "Winter Weather Tips", "href": "/community/winter-weather-tips/"}
+    ]},
+    {"title": "Calendar", "href": "/events/"},
+    {"title": "Owners", "href": "/homeowners/", "children": [
+      {"title": "Assessments", "href": "/homeowners/assessments/"},
+      {"title": "Community Pool", "href": "/community-pool/"},
+      {"title": "County Taxes", "href": "/homeowners/owner-info/"},
+      {"title": "Design Guidelines", "href": "/homeowners/design-guidelines/"},
+      {"title": "Documents (secure)", "href": "/homeowners/owner-documents/"},
+      {"title": "FAQs", "href": "/homeowners/community-faqs/"},
+      {"title": "Google Group", "href": "https://groups.google.com/g/cma-members"},
+      {"title": "Local Resources and Contractors", "href": "/homeowners/suggested-contractors/"},
+      {"title": "Member Directory (secure)", "href": "/homeowners/membership-directory/"},
+      {"title": "Maps and Property Plats", "href": "/homeowners/property-plat-maps-2/"},
+      {"title": "Resale Information", "href": "/homeowners/resale-information/"},
+      {"title": "Services", "href": "/homeowners/member-services/"}
+    ]},
+    {"title": "Association", "href": "/association/", "children": [
+      {"title": "Board of Directors", "href": "/association/board-of-directors/"},
+      {"title": "Committees", "href": "/association/committees/"},
+      {"title": "Task Forces", "href": "/association/task-forces/"},
+      {"title": "Association Documents", "href": "/association/association-documents/"},
+      {"title": "Newsletter Archive", "href": "/association/newsletters/"},
+      {"title": "Contractor Opportunities", "href": "/association/opportunities/"}
+    ]},
+    {"title": "Water & Sewer", "href": "/water-sewer/"},
+    {"title": "Contact Us", "href": "/contacts/"}
+  ],
+  "pool_passes_url": "https://www.eventbrite.com/e/coolfont-mountainside-association-community-pool-passes-2026-season-tickets-1987949818421",
+  "contacts_html": "<p><strong>Site Manager</strong><br>Mountain Home Real Estate<br><a href=\"mailto:mhre123@gmail.com\">mhre123@gmail.com</a><br>Telephone: 304-258-5300<br>After Hours: 304-582-2654</p><p><strong>Community Office/Pool</strong><br>240-738-0682</p><p><strong><a href=\"/association/board-of-directors/\">CMA Board Contacts</a></strong></p><p><strong>Warm Springs PSD</strong> (Water/Sewer)<br>Weekdays, 9–5: (304) 258-4118<br>After hours: (304) 258-0305<br>Weekends: (304) 258-0305</p>",
+  "quick_links": [
+    {"title": "2026 Pool Rules and Info", "href": "/uploads/2026/05/2026-Pool-Rules-and-Information.pdf"},
+    {"title": "DACC Modification Form", "href": "/homeowners/design-guidelines/#dacc-forms"},
+    {"title": "Firewise Information", "href": "/community/firewise-usa/"},
+    {"title": "Community Map & Trail Guide", "href": "/uploads/2025/01/CMA-Map-Trail-Guide-4-panel-2025-01.pdf"},
+    {"title": "Association Documents", "href": "/association/association-documents/"},
+    {"title": "Owner Account Information", "href": "/homeowners/assessments/#owner-accounts"}
+  ],
+  "redirects": {
+    "design-guidelines": "/homeowners/design-guidelines/",
+    "association-documents": "/association/association-documents/",
+    "assessments": "/homeowners/assessments/",
+    "committees": "/association/committees/",
+    "calendar": "/events/",
+    "governing-documents": "/association/association-documents/",
+    "owners/owner-documents": "/homeowners/owner-documents/",
+    "membership-directory": "/homeowners/membership-directory/"
+  },
+  "owner_docs": {
+    "members_url": "https://cma-members.coolfont.workers.dev",
+    "folder_id": "1ZY197ZgY9SFXWyvW0k8c5XNbLC7QWGym",
+    "access_note": "Shared with members of the CMA Google Group",
+    "contact": "the Communications Committee (see <a href=\"/association/committees/\">Committees</a>)"
+  },
+  "footer_address": "Coolfont Mountainside Association<br>PO Box 418<br>Berkeley Springs, WV 25411",
+  "social": [
+    {"title": "Facebook", "href": "https://www.facebook.com/groups/257606361406"},
+    {"title": "Google Group", "href": "https://groups.google.com/g/cma-members"}
+  ]
+}

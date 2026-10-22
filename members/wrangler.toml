@@ -1,0 +1,26 @@
+# Cloudflare Worker for the members-only Owner Documents area.
+# Deployed by .github/workflows/members.yml; secrets are set there from GitHub Secrets.
+name = "cma-members"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[vars]
+SITE_URL = "https://jaronervin.github.io/cma-website"
+DRIVE_FOLDER_ID = "1ZY197ZgY9SFXWyvW0k8c5XNbLC7QWGym"   # "CMA Owner Documents (demo)"
+MEMBER_SHEET_ID = "11M2ubfITMzoSgQoUCssV-i0ZAww5Keg_Pn_yb2Sv7RY"   # "CMA Member Emails (demo)", emails in column A
+# Until coolfontmountainside.com is verified in Resend, only the Resend account's own address receives mail.
+MAIL_FROM = "CMA Owner Documents <onboarding@resend.dev>"
+SESSION_DAYS = "180"
+
+# Per-IP and per-code-attempt limit.
+[[ratelimits]]
+name = "LOGIN_LIMIT"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }
+
+# Sign-in emails per address, so nobody can flood an owner's inbox.
+[[ratelimits]]
+name = "EMAIL_LIMIT"
+namespace_id = "1002"
+simple = { limit = 2, period = 60 }

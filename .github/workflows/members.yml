@@ -1,0 +1,36 @@
+name: Deploy members gatekeeper to Cloudflare
+
+on:
+  push:
+    branches: [main]
+    paths: ["members/**", ".github/workflows/members.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    steps:
+      - name: Skip until Cloudflare secrets are set
+        if: env.HAS_CLOUDFLARE != 'true'
+        run: echo "::notice::CLOUDFLARE_API_TOKEN isn't set yet; skipping deploy. See SETUP-MEMBERS-AREA.md."
+      - uses: actions/checkout@v4
+        if: env.HAS_CLOUDFLARE == 'true'
+      - uses: cloudflare/wrangler-action@v3
+        if: env.HAS_CLOUDFLARE == 'true'
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: members
+          secrets: |
+            GOOGLE_SERVICE_ACCOUNT_JSON
+            RESEND_API_KEY
+            SESSION_SECRET
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}

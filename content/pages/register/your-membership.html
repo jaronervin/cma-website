@@ -1,0 +1,36 @@
+---
+title: Your Membership
+protected: false
+menu_order: 0
+---
+<p>
+
+	
+	<form id="rcp_login_form"  class="rcp_form" method="POST" action="/wp-json/wp/v2/pages/">
+
+		
+		<fieldset class="rcp_login_data">
+			<p>
+				<label for="rcp_user_login">Username or Email</label>
+				<input name="rcp_user_login" id="rcp_user_login" class="required" type="text"/>
+			</p>
+			<p>
+				<label for="rcp_user_pass">Password</label>
+				<input name="rcp_user_pass" id="rcp_user_pass" class="required" type="password"/>
+			</p>
+						<p>
+				<input type="checkbox" name="rcp_user_remember" id="rcp_user_remember" value="1"/>
+				<label for="rcp_user_remember">Remember me</label>
+			</p>
+			<p class="rcp_lost_password"><a href="/wp-json/wp/v2/pages?per_page=100&#038;page=1&#038;rcp_action=lostpassword">Lost your password?</a></p>
+			<p>
+				<input type="hidden" name="rcp_action" value="login"/>
+									<input type="hidden" name="rcp_redirect" value="/wp-json/wp/v2/pages/"/>
+								<input type="hidden" name="rcp_login_nonce" value="8afe31cc88"/>
+				<input id="rcp_login_submit" class="rcp-button" type="submit" value="Login"/>
+			</p>
+					</fieldset>
+
+		
+	</form>
+</p>

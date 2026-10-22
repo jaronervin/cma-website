@@ -1,0 +1,76 @@
+---
+title: Register
+protected: false
+menu_order: 0
+---
+<p class="wp-block-paragraph">If you are an owner of property in Coolfont Mountainside Association (CMA), please register for an account to access the owner-restricted files. Please be sure to use the email account you previously provided to CMA or your account will not be approved.</p>
+
+<h3 class="rcp_header">
+	Register New Account</h3>
+
+<form id="rcp_registration_form" class="rcp_form" method="POST" action="/wp-json/wp/v2/pages/">
+
+	
+			<div class="rcp_login_link">
+			<p><a href="/wp-login.php?redirect_to=https%3A%2F%2Fcoolfontmountainside.com%2Fwp-json%2Fwp%2Fv2%2Fpages%2F">Log in</a> to renew or change an existing membership.</p>
+		</div>
+
+		
+		<fieldset class="rcp_user_fieldset">
+			<p id="rcp_user_login_wrap">
+				<label for="rcp_user_login">Username</label>
+				<input name="rcp_user_login" id="rcp_user_login" class="required" type="text" />
+			</p>
+			<p id="rcp_user_email_wrap">
+				<label for="rcp_user_email">Email</label>
+				<input name="rcp_user_email" id="rcp_user_email" class="required" type="text" />
+			</p>
+			<p id="rcp_user_first_wrap" class="inline">
+				<label for="rcp_user_first">First Name</label>
+				<input name="rcp_user_first" id="rcp_user_first" type="text" />
+			</p>
+			<p id="rcp_user_last_wrap" class="inline-block">
+				<label for="rcp_user_last">Last Name</label>
+				<input name="rcp_user_last" id="rcp_user_last" type="text" />
+			</p>
+			<p id="rcp_password_wrap" class="inline">
+				<label for="rcp_password">Password</label>
+				<input name="rcp_user_pass" id="rcp_password" class="required" type="password"/>
+			</p>
+			<p id="rcp_password_again_wrap" class="inline-block">
+				<label for="rcp_password_again">Password Again</label>
+				<input name="rcp_user_pass_confirm" id="rcp_password_again" class="required" type="password"/>
+			</p>
+
+			
+		</fieldset>
+	
+	
+				<fieldset class="rcp_subscription_fieldset">
+								<ul id="rcp_subscription_levels">
+														<li class="rcp_subscription_level rcp_subscription_level_1">
+						<input type="radio" id="rcp_subscription_level_1" class="required rcp_level" checked="checked" name="rcp_level" rel="0" value="1" data-duration="forever"/>
+						<label for="rcp_subscription_level_1">
+							<span class="rcp_subscription_level_name">Owner</span><span class="rcp_separator">&nbsp;-&nbsp;</span><span class="rcp_price" rel="0">free</span><span class="rcp_separator">&nbsp;-&nbsp;</span>
+							<span class="rcp_level_duration">unlimited</span>
+														<div class="rcp_level_description"> Property owner in CMA.</div>
+						</label>
+					</li>
+												</ul>
+				</fieldset>
+		<div class="rcp_registration_total"></div>
+			<div class="rcp_gateway_fields">
+												</div>
+	
+	
+	
+		<input type="hidden" id="rcp-registration-type" name="registration_type" value="" />
+	<input type="hidden" id="rcp-membership-id" name="membership_id" value="0" />
+	<input type="hidden" id="rcp-payment-id" name="rcp_registration_payment_id" value="0" />
+	
+	
+	<p id="rcp_submit_wrap">
+				<input type="hidden" name="rcp_register_nonce" value="d4921a5d33"/>
+		<input type="submit" name="rcp_submit_registration" id="rcp_submit" class="rcp-button" value="Register"/>
+	</p>
+</form>

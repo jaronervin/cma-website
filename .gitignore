@@ -1,0 +1,7 @@
+_site/
+.work/
+__pycache__/
+
+# Local-only copies. Never commit these: the GitHub Pages site is public.
+archive/
+private-docs/

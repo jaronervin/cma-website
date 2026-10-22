@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cma-site",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8418", "--directory", "C:\\Users\\jaron\\Documents\\CMA\\Website Docs\\_site"],
+      "port": 8418
+    }
+  ]
+}
